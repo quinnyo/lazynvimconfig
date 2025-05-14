@@ -15,6 +15,10 @@ return {
         ["<Tab>"] = LazyVim.cmp.confirm(),
       })
 
+			opts.experimental = {
+				ghost_text = false,
+			}
+
       table.insert(opts.sources, { name = "emoji" })
     end,
   },
